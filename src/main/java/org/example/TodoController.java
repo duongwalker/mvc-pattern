@@ -31,7 +31,6 @@ public class TodoController {
     }
     // Update view with provided method
     void updateView() {
-//        todoView.showTasks(this.getTasks());
-        System.out.println("View up-to-date.");
+        todoView.showTasks(this.getTasks());
     }
 }
