@@ -25,10 +25,12 @@ public class TodoController {
         todoModel.removeTask(task);
         this.updateView();
     }
+//    Return a list of tasks
     List<String> getTasks() {
         return todoModel.getTasks();
     }
+    // Update view with provided method
     void updateView() {
-        System.out.println("View up-to-date.");
+        todoView.showTasks(this.getTasks());
     }
 }
